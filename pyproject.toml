@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
+"pg_*.py" = ["E402", "F401"]
+"apps/ix_scripting/scripting/xml_py/gsmonly/*.py" = ["E501"]
+
+
+[lint]
+# Disable fix for unused imports (`F401`).
+unfixable = ["F401"]
