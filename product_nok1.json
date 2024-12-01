@@ -1,0 +1,10 @@
+{
+  "productId": 12345,
+  "title": "Super Widget Pro",
+  "price": {
+    "amount": "19.99",
+    "currency": "USD"
+  },
+  "inStock": true,
+  "categories": ["electronics", "gadgets"]
+}
