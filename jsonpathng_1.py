@@ -29,7 +29,13 @@ document = {
     },
 }
 
-result = parse("$.spouse.address.zipcode").find(document)
+var = "spouse"
+result = parse(f"$.{var}.address.zipcode").find(document)
 if result:
-    print(result)
+    # print(result)
     print(result[0].value)  # 67890
+
+
+addresses = parse("$..address").find(document)
+for address in addresses:
+    print(address.value)
